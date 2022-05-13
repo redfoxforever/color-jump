@@ -2,7 +2,7 @@ let itemBtn = document.querySelectorAll('.item')
 
 for (let i = 0; i < itemBtn.length; i++) {
     itemBtn[i].addEventListener('click', function () {
-        itemBtn[i].classList.add('active')
+        this.classList.add('active')
         parserData(this)
     })
 }
